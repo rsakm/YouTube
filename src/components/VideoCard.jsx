@@ -2,7 +2,7 @@
 
 function VideoCard(props){
 
-    return <div>
+    return <div className="p-2 ">
         <img src={props.image} alt="" className="rounded-xl"/>
 
         {/* video details */}
@@ -10,7 +10,7 @@ function VideoCard(props){
 
             <div className="col-span-1">
                 {/* image */}
-                <img className="rounded-full h-16 w-16" src={props.thumbnailImage} alt="" />
+                <img className="rounded-full h-16 w-20" src={props.thumbnailImage} alt="" />
             </div>
 
             <div className="col-span-11 pl-5">
