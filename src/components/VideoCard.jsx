@@ -3,14 +3,14 @@
 function VideoCard(props){
 
     return <div className="p-2 ">
-        <img src={props.image} alt="" className="rounded-xl"/>
+        <img src={props.image} alt="" className="rounded-xl w-full h-40 md:h-48 lg:h-56 object-cover"/>
 
         {/* video details */}
         <div className="grid grid-cols-12 pt-2">
 
             <div className="col-span-1">
                 {/* image */}
-                <img className="rounded-full h-16 w-20" src={props.thumbnailImage} alt="" />
+                <img className="rounded-full h-12 w-12" src={props.thumbnailImage} alt="" />
             </div>
 
             <div className="col-span-11 pl-5">

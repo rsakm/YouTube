@@ -14,7 +14,7 @@ const videos = [
     channel:"Evergreen music",
     views:"21M views",
     timestamp:"1 year ago",
-    image:"../public/ZN_XrB_St-8-HD.jpg",
+    image:"../public/i2.jpg",
     thumbnailImage:"../public/thumb (1).png"
     },
     {
@@ -30,7 +30,7 @@ const videos = [
     channel:"Evergreen music",
     views:"21M views",
     timestamp:"1 year ago",
-    image:"../public/ZN_XrB_St-8-HD.jpg",
+    image:"../public/i2.jpg",
     thumbnailImage:"../public/thumb (1).png"
     },
     {

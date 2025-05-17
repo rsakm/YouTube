@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import VideoCard from './components/VideoCard'
 import { VideoGrid } from './components/VideoGrid'
+import { Appbar } from './components/Appbar'
 
 function App() {
   
@@ -16,6 +17,8 @@ function App() {
     image="../public/ZN_XrB_St-8-HD.jpg"
     thumbnailImage="../public/ZN_XrB_St-8-HD.jpg"
     /> */}
+
+    <Appbar/>
 
     <VideoGrid/>
     </>
