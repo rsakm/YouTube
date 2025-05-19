@@ -1,28 +1,31 @@
+import { useRouter } from "next/router"
+// import type { Video } from "../videos"
+import { Line } from "./Line"
 
-
-function VideoCard(props){
-
-    return <div className="p-2 ">
-        <img src={props.image} alt="" className="rounded-xl w-full h-40 md:h-48 lg:h-56 object-cover"/>
-
-        {/* video details */}
-        <div className="grid grid-cols-12 pt-2">
-
-            <div className="col-span-1">
-                {/* image */}
-                <img className="rounded-full h-12 w-12" src={props.thumbnailImage} alt="" />
+export const VideoCard = (video) => {
+    const router = useRouter();
+    return <div className="cursor-pointer" onClick={() => {
+        router.push("/video/1");
+    }}>
+        <div className="rounded-xl overflow-hidden">
+            <div>
+                <img src={video.thumbnail} />
+                <Line progress={10} />
             </div>
-
-            <div className="col-span-11 pl-5">
-                {/* title and description */}
-                <p>{props.title}</p>
-                <p className="text-gray-400" >{props.channel}</p>
-                <p className="text-gray-400 ">{props.views}. {props.timestamp}</p>
+        </div>
+        <div className={"text-white-800 text-2xl font-medium"}>
+            {video.title}
+        </div>
+        <div className={"text-gray-400 text-xl font-normal		"}>
+            {video.description}
+        </div>
+        <div className="flex">
+            <div className={"text-gray-400 text-xl font-normal	pr-2	"}>
+                {video.viewCount} 
             </div>
-
+            <div className={"text-gray-400 text-xl font-normal		"}>
+            • {video.timestamp}
+            </div>
         </div>
     </div>
 }
-
-
-export default VideoCard;
